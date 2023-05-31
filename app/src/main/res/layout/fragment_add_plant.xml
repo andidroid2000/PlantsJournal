@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.AddPlantFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:fillViewport="false"
+        tools:context=".AddPlantActivity">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/logregbg">
+
+            <TextView
+                android:id="@+id/nameTag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="10dp"
+                android:text="Name"
+                android:textColor="@color/text"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/name_addPlant"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/rounded_edittext_login_register"
+                android:ems="10"
+                android:hint="Hedera helix"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:textColor="@color/text"
+                android:textColorHint="@color/hint"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nameTag" />
+
+            <DatePicker
+                android:id="@+id/datePicker_addPlant"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:calendarTextColor="@color/text"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner"
+                app:layout_constraintEnd_toEndOf="@+id/name_addPlant"
+                app:layout_constraintStart_toStartOf="@+id/name_addPlant"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <TextView
+                android:id="@+id/titlePlace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="Purchase place"
+                android:textColor="@color/text"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/datePicker_addPlant"
+                app:layout_constraintTop_toBottomOf="@+id/datePicker_addPlant" />
+
+            <EditText
+                android:id="@+id/purchasePlace_addPlant"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/rounded_edittext_login_register"
+                android:ems="10"
+                android:hint="Hornbach Berceni"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:textColor="@color/text"
+                android:textColorHint="@color/hint"
+                app:layout_constraintEnd_toEndOf="@+id/datePicker_addPlant"
+                app:layout_constraintStart_toStartOf="@+id/titlePlace"
+                app:layout_constraintTop_toBottomOf="@+id/titlePlace" />
+
+            <TextView
+                android:id="@+id/titleSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="10dp"
+                android:text="Plant size"
+                android:textColor="@color/text"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/purchasePlace_addPlant"
+                app:layout_constraintTop_toBottomOf="@+id/purchasePlace_addPlant" />
+
+            <EditText
+                android:id="@+id/size_addPlant"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/rounded_edittext_login_register"
+                android:ems="10"
+                android:hint="Write size in cm"
+                android:inputType="numberDecimal"
+                android:paddingLeft="10dp"
+                android:textColor="@color/text"
+                android:textColorHint="@color/hint"
+                app:layout_constraintEnd_toEndOf="@+id/purchasePlace_addPlant"
+                app:layout_constraintStart_toStartOf="@+id/titleSize"
+                app:layout_constraintTop_toBottomOf="@+id/titleSize" />
+
+
+            <TextView
+                android:id="@+id/titleDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="10dp"
+                android:text="The story of your plant"
+                android:textColor="@color/text"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/size_addPlant"
+                app:layout_constraintTop_toBottomOf="@+id/size_addPlant" />
+
+            <EditText
+                android:id="@+id/description_addPlant"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/rounded_edittext_login_register"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="Describe your plant in a few words"
+                android:inputType="textMultiLine"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/text"
+                android:textColorHint="@color/hint"
+                app:layout_constraintEnd_toEndOf="@+id/size_addPlant"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/titleDescription"
+                app:layout_constraintTop_toBottomOf="@+id/titleDescription" />
+
+            <Button
+                android:id="@+id/uploadPlant_addPlant"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/rounded_button_login_register"
+                android:text="Add your plant"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:paddingLeft="10dp"
+                android:text="Purchase date"
+                android:textColor="@color/text"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/name_addPlant"
+                app:layout_constraintTop_toBottomOf="@+id/name_addPlant" />
+
+            <Button
+                android:id="@+id/takePicture_addPlant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_button_login_register"
+                android:text="Take a\n picture"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="@+id/description_addPlant"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="10dp"
+                android:text="Upload an image"
+                android:textColor="@color/text"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/description_addPlant"
+                app:layout_constraintTop_toBottomOf="@+id/description_addPlant" />
+
+            <Button
+                android:id="@+id/uploadPhoto_addPlant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_button_login_register"
+                android:text="Upload a\n photo"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toEndOf="@+id/takePicture_addPlant"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/description_addPlant"
+                app:layout_constraintStart_toStartOf="@+id/takePicture_addPlant"
+                app:layout_constraintTop_toBottomOf="@+id/takePicture_addPlant"
+                app:srcCompat="@drawable/ic_launcher_foreground" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</FrameLayout>

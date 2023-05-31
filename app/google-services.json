@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "971936986491",
+    "firebase_url": "https://plantsjournal-32912-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "plantsjournal-32912",
+    "storage_bucket": "plantsjournal-32912.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:971936986491:android:1984b7fb0d560c9fddf9de",
+        "android_client_info": {
+          "package_name": "optandroid.plantsjournal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEfhCcnfeUnN3X735ImYmSgAn1t1gADAA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

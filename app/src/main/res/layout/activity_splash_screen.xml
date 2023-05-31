@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/activity_splash_screen_scene"
+    tools:context=".Activities.SplashScreenActivity"
+    android:id="@+id/motionLayout"
+    android:background="@drawable/gradient">
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="1000dp"
+        android:layout_height="1000dp"
+        android:src="@drawable/plants_journal_logo"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="116dp" />
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Plants Journal"
+        android:textSize="40dp"
+        android:textColor="@color/logo_color"
+        android:textStyle="bold"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/infoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Android Project\n       - Kotlin -"
+        android:textColor="@color/logo_color"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="678dp" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
